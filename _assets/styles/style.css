@@ -1,0 +1,17 @@
+body, h1{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1b181b;
+}
+
+#container{
+    background-color: #a352a3;
+    min-width: 200px;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    display: flex
+}
