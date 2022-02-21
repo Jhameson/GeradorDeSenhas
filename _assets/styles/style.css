@@ -1,17 +1,109 @@
-body, h1{
+body {
+    background-color: #2e2e2e;
+    font-family: sans-serif;
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+body,
+h1 {
     padding: 0;
     margin: 0;
 }
-
-body{
-    background-color: #1b181b;
+#main-title {
+    text-align: center;
+    color: #FFFFFF;
+    /* margin-bottom: 20px  */
 }
-
-#container{
-    background-color: #a352a3;
-    min-width: 200px;
-    max-width: 500px;
+#container {
+    background-color: #008F7A;
+    /* min-width: 200px; */
+    max-width: 800px;
     height: auto;
     padding: 20px;
-    display: flex
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 11px 2px #000000;
+}
+#content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#options {
+    min-width: 250px;
+    background-color: #FBEAFF;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #008F7A;
+    /* width: 50%; */
+}
+#password-result {
+    padding: 20px;
+    min-width: 250px;
+    flex: 1;
+    background-color: #FBEAFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #008F7A;
+    /* width: 50%; */
+}
+
+#generate {
+    text-align: center;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7F3FB2;
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#generate:hover {
+    cursor: pointer;
+    background-color: #5a2e7e;
+}
+.result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 50px; */
+    width: 100%;
+}
+.result #pwd-result {
+    background-color: #ffffff;
+    height: 40px;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.result #copy {
+    text-align: center;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #FFA17A;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#copy:hover{
+    cursor: pointer;
+    background-color: #da8460;
+}
+.form-control {
+    margin-top: 20px;
+    font-family: sans-serif;
 }

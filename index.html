@@ -12,35 +12,43 @@
 
 <body>
     <div id="container">
-        <h1>Generate Password</h1>
-        <div id="options">
-            <div class="form-control">
-                <label for="pwdLength">Tamanho da senha</label>
-                <input type="number" id="pwdLength" value="10" min="4" max="30">
+        <h1 id="main-title">Generate Password</h1>
+        <div id="content">
+
+            <div id="options">
+                <div class="form-control">
+                    <label for="pwdLength">Tamanho da senha</label>
+                    <input type="number" id="pwdLength" value="10" min="4" max="20">
+                </div>
+                <div class="form-control">
+                    <label for="upperCase">Letras Maiúsculas</label>
+                    <input type="checkbox" id="upperCase">
+                </div>
+                <div class="form-control">
+                    <label for="loweCase">Letras Minúsculas</label>
+                    <input type="checkbox" id="loweCase">
+                </div>
+                <div class="form-control">
+                    <label for="symbols">Símbolos</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+                <div class="form-control">
+                    <label for="number">Números</label>
+                    <input type="checkbox" id="number">
+                </div>
             </div>
-            <div class="form-control">
-                <label for="upperCase">Letras Maiúsculas</label>
-                <input type="checkbox" id="upperCase">
+            <div id="password-result">
+                <div class="result">
+                    <span id="pwd-result">password</span>
+                    <button id="copy">Copiar senha</button>
+                </div>
+                <button class="generate" id="generate">Gerar Senha</button>
             </div>
-            <div class="form-control">
-                <label for="loweCase">Letras Minúsculas</label>
-                <input type="checkbox" id="loweCase">
-            </div>
-            <div class="form-control">
-                <label for="symbols">Símbolos</label>
-                <input type="checkbox" id="symbols">
-            </div>
-            <div class="form-control">
-                <label for="number">Números</label>
-                <input type="checkbox" id="number">
-            </div>
-        </div>
-        <button class="generate" id="generate">Gerar Senha</button>
-        <div class="result">
-            <span id="pwd-result">sdsadsa</span>
-            <button id="copy">Copiar senha</button>
         </div>
     </div>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
